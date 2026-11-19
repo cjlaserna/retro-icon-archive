@@ -4,8 +4,8 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/cjlaserna/retro-icon-archive?style=flat-square&logo=github)](https://github.com/cjlaserna/retro-icon-archive/stargazers)
 [![GitHub Release](https://img.shields.io/github/v/release/cjlaserna/retro-icon-archive?style=flat-square&logo=github)](https://github.com/cjlaserna/retro-icon-archive/releases)
-[![npm Version](https://img.shields.io/npm/v/@claserna/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
-[![npm Downloads](https://img.shields.io/npm/dm/@claserna/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
+[![npm Version](https://img.shields.io/npm/v/@clasernaj/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@clasernaj/retro-icons-archive)
+[![npm Downloads](https://img.shields.io/npm/dm/@clasernaj/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@clasernaj/retro-icons-archive)
 
 <img src="assets/header.webp" alt="A grassy field and a city in the distance" width="100%">
 
@@ -13,7 +13,7 @@
 
 [![Browse Icon Gallery](https://img.shields.io/badge/BROWSE_ICON_GALLERY-0088FF?style=for-the-badge)](https://cjlaserna.github.io/retro-icon-archive/)
 [![Download Icons](https://img.shields.io/badge/DOWNLOAD_ICONS-5EC343?style=for-the-badge)](https://github.com/cjlaserna/retro-icon-archive/releases)
-[![View on npm](https://img.shields.io/badge/VIEW_ON_NPM-0088FF?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
+[![View on npm](https://img.shields.io/badge/VIEW_ON_NPM-0088FF?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@clasernaj/retro-icons-archive)
 
 </div>
 
@@ -30,7 +30,7 @@ Browse the [Retro Icon Archive](https://cjlaserna.github.io/retro-icon-archive/)
 Install the Retro Icons Archive package with npm:
 
 ```bash
-npm install @claserna/retro-icons-archive
+npm install @clasernaj/retro-icons-archive
 ```
 
 Alternatively, use the stylesheets directly through jsDelivr without installing anything.
@@ -53,7 +53,7 @@ Or use the npm package through jsDelivr:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@claserna/retro-icons-archive/famfamfam/silk.css"
+  href="https://cdn.jsdelivr.net/npm/@clasernaj/retro-icons-archive/famfamfam/silk.css"
 />
 ```
 
@@ -64,8 +64,8 @@ For production websites, use a specific GitHub tag or npm package version instea
 Import whichever collections you want into your JavaScript or TypeScript entry file:
 
 ```javascript
-import "@claserna/retro-icons-archive/famfamfam/silk.css";
-import "@claserna/retro-icons-archive/famfamfam/flags.css";
+import "@clasernaj/retro-icons-archive/famfamfam/silk.css";
+import "@clasernaj/retro-icons-archive/famfamfam/flags.css";
 ```
 
 ### Using Icons

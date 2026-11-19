@@ -55,7 +55,7 @@ function draw() {
     group.file +
     '">';
   npmImport.textContent =
-    'import "@claserna/retro-icons-archive/' +
+    'import "@clasernaj/retro-icons-archive/' +
     collectionFolder +
     "/" +
     group.file +

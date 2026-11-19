@@ -78,7 +78,7 @@ if (!collections.length)
   );
 copyFileSync(licenseNotice, path.join(output, "LICENSES.md"));
 const pkg = {
-  name: "@claserna/retro-icons-archive",
+  name: "@clasernaj/retro-icons-archive",
   version,
   description: "Retro icon CSS sprite sheets organized by collection",
   license: "SEE LICENSE IN LICENSES.md",
@@ -93,10 +93,10 @@ writeFileSync(
 );
 writeFileSync(
   path.join(output, "README.md"),
-  `# Retro Icons Archive\n\nInstall: \`npm install @claserna/retro-icons-archive\`\n\nImport a stylesheet: \`import '@claserna/retro-icons-archive/famfamfam/silk.css';\`\n\nUse an icon: \`<span class="silk-add"></span>\`\n\nCollections: ${collections.join(", ")}.\n\nSee LICENSES.md for per-collection copyright and redistribution terms.\n`,
+  `# Retro Icons Archive\n\nInstall: \`npm install @clasernaj/retro-icons-archive\`\n\nImport a stylesheet: \`import '@clasernaj/retro-icons-archive/famfamfam/silk.css';\`\n\nUse an icon: \`<span class="silk-add"></span>\`\n\nCollections: ${collections.join(", ")}.\n\nSee LICENSES.md for per-collection copyright and redistribution terms.\n`,
 );
 console.log(
-  `Built @claserna/retro-icons-archive@${version} with ${collections.length} collections and ${sheetCount} CSS files at .npm-build/retro-icons-archive`,
+  `Built @clasernaj/retro-icons-archive@${version} with ${collections.length} collections and ${sheetCount} CSS files at .npm-build/retro-icons-archive`,
 );
 console.log(
   "Before publishing: verify redistribution terms, especially FamFamFam Mini and third-party Fugue icons.",
