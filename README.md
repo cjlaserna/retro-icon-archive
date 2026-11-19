@@ -1,45 +1,135 @@
+<div align="center">
+
 # Retro Icon Archive
 
-A collection of classic colorful web icon sets, presented with matching retro-style searchable galleries and CSS sprites.
+[![GitHub Stars](https://img.shields.io/github/stars/cjlaserna/retro-icon-archive?style=flat-square&logo=github)](https://github.com/cjlaserna/retro-icon-archive/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/cjlaserna/retro-icon-archive?style=flat-square&logo=github)](https://github.com/cjlaserna/retro-icon-archive/releases)
+[![npm Version](https://img.shields.io/npm/v/@claserna/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
+[![npm Downloads](https://img.shields.io/npm/dm/@claserna/retro-icons-archive?style=flat-square&logo=npm)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
 
-## Browse
+<img src="assets/header.webp" alt="A grassy field and a city in the distance" width="100%">
 
-Browse the [Retro Icon Archive repository](https://github.com/cjlaserna/retro-icon-archive) to inspect its HTML galleries, CSS files, and spritesheets. Collection pages provide links to the current collection files and to the repository for custom or bulk downloads.
+**A collection of classic colorful web icon sets, presented with matching retro-style searchable galleries and CSS sprites.**
 
-## Project structure
+[![Browse Icon Gallery](https://img.shields.io/badge/BROWSE_ICON_GALLERY-0088FF?style=for-the-badge)](https://cjlaserna.github.io/retro-icon-archive/)
+[![Download Icons](https://img.shields.io/badge/DOWNLOAD_ICONS-5EC343?style=for-the-badge)](https://github.com/cjlaserna/retro-icon-archive/releases)
+[![View on npm](https://img.shields.io/badge/VIEW_ON_NPM-0088FF?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/@claserna/retro-icons-archive)
 
-- [Archive homepage](https://github.com/cjlaserna/retro-icon-archive/blob/main/index.html)
-- [FamFamFam](https://github.com/cjlaserna/retro-icon-archive/tree/main/famfamfam): Silk, Mini, Flags
-- [Sweetie](https://github.com/cjlaserna/retro-icon-archive/tree/main/sweetie), [Manentia](https://github.com/cjlaserna/retro-icon-archive/tree/main/manentia), [Drunkey Love](https://github.com/cjlaserna/retro-icon-archive/tree/main/drunkey-love), [Diagona](https://github.com/cjlaserna/retro-icon-archive/tree/main/diagona), [Fugue](https://github.com/cjlaserna/retro-icon-archive/tree/main/fugue)
-- [FatCow 16x16](https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-16), [FatCow 16x16 Grey](https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-16-grey), [FatCow 32x32](https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-32), [FatCow 32x32 Grey](https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-32-grey)
-- [LICENSES.md](https://github.com/cjlaserna/retro-icon-archive/blob/main/LICENSES.md): attribution and license status
+</div>
 
-The jsDelivr URLs below omit a version segment so they serve the latest repository contents.
+## Preview & Documentation
 
-## Using the icons
+Browse the [Retro Icon Archive](https://cjlaserna.github.io/retro-icon-archive/) to explore collections, search icons, copy HTML, and access download and import options.
 
-1. Choose a collection and find the icon class name in its gallery.
-2. Use the collection's latest stylesheet from jsDelivr:
+[![Documentation](https://img.shields.io/badge/DOCUMENTATION-0088FF?style=for-the-badge)](https://cjlaserna.github.io/retro-icon-archive/)
+[![GitHub Repository](https://img.shields.io/badge/GITHUB_REPOSITORY-245778?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cjlaserna/retro-icon-archive)
+[![Releases](https://img.shields.io/badge/RELEASES-5EC343?style=for-the-badge)](https://github.com/cjlaserna/retro-icon-archive/releases)
 
-   ```html
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cjlaserna/retro-icon-archive/famfamfam/silk.css">
-   ```
+## Installation
 
-3. Copy an icon's HTML from its gallery and paste it wherever you want it to appear:
+Install the Retro Icons Archive package with npm:
 
-   ```html
-   <span class="YOUR_ICON_CLASS"></span>
-   ```
+```bash
+npm install @claserna/retro-icons-archive
+```
 
-4. For collection downloads, use the collection page's download links. Visit the [GitHub repository](https://github.com/cjlaserna/retro-icon-archive) for custom or bulk downloads.
+Alternatively, use the stylesheets directly through jsDelivr without installing anything.
 
-## CDN and repository
+## Usage / Examples
 
-The jsDelivr URLs above track the latest repository contents because they omit a version number. For source files and bulk downloads, visit [github.com/cjlaserna/retro-icon-archive](https://github.com/cjlaserna/retro-icon-archive).
+### Import via CDN (jsDelivr)
 
-## Credits
+Add a collection's stylesheet to the `head` of your HTML document:
 
-The artwork is not original to this archive. See [LICENSES.md](LICENSES.md) and the credits at the bottom of each gallery. License status varies, and some collections need further rights verification before public redistribution.
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/cjlaserna/retro-icon-archive@main/famfamfam/silk.css"
+/>
+```
 
-- Personal projects: https://cats-corner.neocities.org/
-- Professional website: https://clasernaj.dev/
+Or use the npm package through jsDelivr:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@claserna/retro-icons-archive/famfamfam/silk.css"
+/>
+```
+
+For production websites, use a specific GitHub tag or npm package version instead of the latest files.
+
+### Import via Node Package Manager (npm)
+
+Import whichever collections you want into your JavaScript or TypeScript entry file:
+
+```javascript
+import "@claserna/retro-icons-archive/famfamfam/silk.css";
+import "@claserna/retro-icons-archive/famfamfam/flags.css";
+```
+
+### Using Icons
+
+Choose a collection and find the exact icon class name in its gallery. Click any icon to copy its HTML, then paste it wherever you'd like the icon to appear:
+
+```html
+<span class="YOUR_ICON_CLASS"></span>
+```
+
+The stylesheet automatically displays the corresponding icon from its spritesheet.
+
+## Collections
+
+| Collection                                                                                 | Available Styles                                                        |
+| :----------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+| [**FamFamFam**](https://github.com/cjlaserna/retro-icon-archive/tree/main/famfamfam)       | Silk, Mini, Flags                                                       |
+| [**Sweetie**](https://github.com/cjlaserna/retro-icon-archive/tree/main/sweetie)           | Basepack, Webcommunication                                              |
+| [**Manentia**](https://github.com/cjlaserna/retro-icon-archive/tree/main/manentia)         | Buttons, Documents and Folders, Text Editor, Users and Groups, and more |
+| [**Drunkey Love**](https://github.com/cjlaserna/retro-icon-archive/tree/main/drunkey-love) | Icons                                                                   |
+| [**Diagona**](https://github.com/cjlaserna/retro-icon-archive/tree/main/diagona)           | 10×10, 16×16                                                            |
+| [**Fugue**](https://github.com/cjlaserna/retro-icon-archive/tree/main/fugue)               | Icons, Shadowless, Bonus Icons                                          |
+| [**FatCow**](https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-16)          | 16×16, 16×16 Grey, 32×32, 32×32 Grey                                    |
+
+Each collection page provides searchable icon galleries and collection, stylesheet-only, and spritesheet-only download links.
+
+For custom or bulk downloads, visit the [GitHub repository](https://github.com/cjlaserna/retro-icon-archive).
+
+[![Explore All Collections](https://img.shields.io/badge/EXPLORE_ALL_COLLECTIONS-0088FF?style=for-the-badge)](https://cjlaserna.github.io/retro-icon-archive/)
+[![Download Releases](https://img.shields.io/badge/DOWNLOAD_RELEASES-5EC343?style=for-the-badge)](https://github.com/cjlaserna/retro-icon-archive/releases)
+
+## License & Credits
+
+The artwork is not original to this archive. Original artists retain their respective rights.
+
+See [LICENSES.md](https://github.com/cjlaserna/retro-icon-archive/blob/main/LICENSES.md) and the credits at the bottom of each gallery for attribution and licensing information.
+
+License terms vary by collection, and some require further rights verification before public redistribution. The archive is not covered by a single MIT license.
+
+### Documentation Materials
+
+The following resources were used for the archive's visual styling and documentation:
+
+| Material       | Source                                                                                          |
+| :------------- | :---------------------------------------------------------------------------------------------- |
+| Scrollbar Code | [Starloft](https://starloft.neocities.org/)                                                     |
+| Wallpapers     | [Frutiger Aero Archive](https://frutigeraeroarchive.org/wallpapers/miscellaneous#miscellaneous) |
+| Mouse Cursor   | [UIUIUI](https://uiuiui.in/en/windows/329-sc-cursor/)                                           |
+| Icon Directory | [Atagar Free Media Archive](https://archive.atagar.com/freeMedia/)                              |
+
+## Links
+
+- **Personal projects:** https://cats-corner.neocities.org/
+- **Professional website:** https://clasernaj.dev/
+
+---
+
+<div align="center">
+
+**Made for indie web.**
+
+[![Personal Website](https://img.shields.io/badge/PERSONAL_WEBSITE-5EC343?style=flat-square)](https://cats-corner.neocities.org/)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0088FF?style=flat-square)](https://clasernaj.dev/)
+[![GitHub](https://img.shields.io/badge/GITHUB-245778?style=flat-square&logo=github&logoColor=white)](https://github.com/cjlaserna)
+
+</div>
+

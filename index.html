@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Retro Icon Archive: Classic Web Icon Libraries</title>
+    <script src="/scripts/copy-code.js" defer></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="famfamfam/silk.css" />
@@ -481,28 +482,55 @@
           these icons
         </h2>
         <p>
-          <b>1.</b> Choose a collection above. Its homepage lists the available
-          stylesheets and exact icon class names.
-        </p>
-        <p>
-          <b>2.</b> Each collection page offers collection, stylesheet-only, and
-          spritesheet-only download links. For custom or bulk downloads, use the
+          Choose a collection above. Its homepage lists the available
+          stylesheets and exact icon class names. Each collection page offers
+          collection, stylesheet-only, and spritesheet-only download links. For
+          custom or bulk downloads, use the
           <a href="https://github.com/cjlaserna/retro-icon-archive"
             >GitHub repository</a
           >.
         </p>
-        <p><b>3.</b> Import the latest collection stylesheet from jsDelivr:</p>
-        <pre class="code">
+        <div id="import-types">
+          <h2>Import via CDN (jsDelivr)</h2>
+          <article class="content-box">
+            <p>
+              <b>1. </b>Add the collection's stylesheet from jsDelivr to the
+              <code>head</code> of your document. Each gallery page
+              <a href="#collections">above</a> contains stylesheet links.
+            </p>
+            <pre class="code">
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cjlaserna/retro-icon-archive/famfamfam/silk.css"&gt;</pre
-        >
-        <p>
-          <b>4.</b> Copy an icon's HTML from its gallery and paste it wherever
-          you want it to appear:
-        </p>
-        <pre class="code">
+            >
+            <p>
+              <b>2.</b> Click an icon in the gallery to copy its HTML, then
+              paste it wherever you'd like the icon to appear.
+            </p>
+            <pre class="code">
 &lt;span class="YOUR_ICON_CLASS"&gt;&lt;/span&gt;</pre
-        >
-        <p>The CDN stylesheet loads its matching spritesheet automatically.</p>
+            >
+          </article>
+          <br />
+          <h2>Import via Node Package Manager (NPM)</h2>
+          <article class="content-box">
+            <p><b>1.</b> Install the Retro Icons Archive package:</p>
+            <pre class="code">npm install @claserna/retro-icons-archive</pre>
+            <p>
+              <b>2.</b> Import which collections you want into your entry file.
+              Each gallery page <a href="#collections">above</a> contains import
+              snippets.
+            </p>
+            <pre class="code">
+import "@claserna/retro-icons-archive/famfamfam/flags.css";</pre
+            >
+            <p>
+              <b>3.</b> Click an icon in the gallery to copy its HTML, then
+              paste it wherever you'd like the icon to appear.
+            </p>
+            <pre class="code">
+&lt;span class="YOUR_ICON_CLASS"&gt;&lt;/span&gt;</pre
+            >
+          </article>
+        </div>
       </section>
       <section class="archive-section" id="notes">
         <h2>

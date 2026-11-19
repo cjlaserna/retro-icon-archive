@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>FatCow 16x16 Icons — Icon Directory</title>
+    <script src="/scripts/copy-code.js" defer></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../famfamfam/silk.css" />
     <link rel="stylesheet" href="../famfamfam/mini.css" />
@@ -33,52 +34,75 @@
     <nav class="bar">
       <div class="wrap tabs" id="tabs" aria-label="Icon collections"></div>
     </nav>
-    <main class="wrap">
-      <p class="collection-home"><a href="../">< Back to Home</a></p>
-      <section class="controls">
-        <div>
-          <label for="search">Search icons</label
-          ><input
-            type="search"
-            id="search"
-            placeholder="Search by name..."
-            autocomplete="off"
-          />
+    <main class="wrap home">
+      <section class="archive-section" id="how-to">
+        <details>
+          <summary>
+            <h2>Import Options</h2>
+          </summary>
+
+          <p>
+            Choose a sub-collection above, if available. Each sub-collection
+            lists the available icons and exact icon class names. Browse the
+            <a href="https://github.com/cjlaserna/retro-icon-archive/tree/main/fatcow-16">GitHub collection folder</a>
+            for CSS and spritesheet files. For custom or bulk downloads, use
+            the <a href="https://github.com/cjlaserna/retro-icon-archive">GitHub repository</a>.
+          </p>
+
+          <div id="import-types">
+            <h2>Import via CDN (jsDelivr)</h2>
+            <article class="content-box">
+              <p>
+                <b>1.</b> Add the latest collection stylesheet from jsDelivr to
+                the <code>head</code> of your document.
+              </p>
+              <pre class="code" id="import"></pre>
+              <p>
+                <b>2.</b> Click an icon in the gallery to copy its HTML, then
+                paste it wherever you'd like the icon to appear.
+              </p>
+              <pre class="code" id="cdn-example"></pre>
+            </article>
+
+            <h2>Import via Node Package Manager (NPM)</h2>
+            <article class="content-box">
+              <p><b>1.</b> Install the Retro Icons Archive package:</p>
+              <pre class="code">npm install @claserna/retro-icons-archive</pre>
+              <p>
+                <b>2.</b> Import the current sub-collection stylesheet into your
+                entry file.
+              </p>
+              <pre class="code" id="npm-import"></pre>
+              <p>
+                <b>3.</b> Click an icon in the gallery to copy its HTML, then
+                paste it wherever you'd like the icon to appear.
+              </p>
+              <pre class="code" id="npm-example"></pre>
+            </article>
+          </div>
+        </details>
+      </section>
+
+      <section class="archive-section">
+        <h2>Icon Gallery</h2>
+        <p class="collection-home">
+          <a href="../"><span class="icon mini-arrow_left" aria-hidden="true"></span>Back to Home</a>
+        </p>
+        <div class="controls">
+          <div>
+            <label for="search">Search icons</label
+            ><input
+              type="search"
+              id="search"
+              placeholder="Search by name..."
+              autocomplete="off"
+            />
+          </div>
+          <div id="count"></div>
         </div>
-        <div id="count"></div>
+        <div class="notice" role="status" id="status"></div>
+        <div class="icons" id="icons" aria-label="Available icons"></div>
       </section>
-      <section class="help">
-        <p>
-          <b>1.</b> Import the latest stylesheet for the selected collection
-          from jsDelivr:
-        </p>
-        <pre class="code" id="import"></pre>
-        <p>
-          <b>2.</b> Use an icon with
-          <code>&lt;span class="icon_class_name"&gt;&lt;/span&gt;</code>. Click
-          any icon below to copy its HTML.
-        </p>
-        <p>
-          <b>Note:</b> The stylesheet loads its matching spritesheet from the
-          repository automatically. No local assets or JavaScript are needed.
-        </p>
-        <p class="download-links">
-          <a id="download-collection" target="_blank" rel="noopener"
-            >Download collection (CSS + spritesheet)</a
-          >
-          <a id="download-css">Download CSS only</a>
-          <a id="download-sprite">Download spritesheet only</a>
-        </p>
-        <small class="download-note"
-          >The collection link opens its GitHub folder. For custom or bulk
-          downloads, visit the
-          <a href="https://github.com/cjlaserna/retro-icon-archive"
-            >GitHub repository</a
-          >.
-        </small>
-      </section>
-      <div class="notice" role="status" id="status"></div>
-      <section class="icons" id="icons" aria-label="Available icons"></section>
     </main>
     <footer class="credits">
       <div class="wrap">
