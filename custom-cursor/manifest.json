@@ -1,0 +1,367 @@
+[
+  {
+    "name": "AppStarting",
+    "class": "cursor-appstarting",
+    "frames": [
+      "frames/AppStarting/AppStarting-01.png",
+      "frames/AppStarting/AppStarting-02.png",
+      "frames/AppStarting/AppStarting-03.png",
+      "frames/AppStarting/AppStarting-04.png",
+      "frames/AppStarting/AppStarting-05.png"
+    ],
+    "hotspots": [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "duration_ms": 417,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "Arrow",
+    "class": "cursor-arrow",
+    "frames": [
+      "frames/Arrow/Arrow-01.png"
+    ],
+    "hotspots": [
+      [
+        3,
+        3
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "Hand",
+    "class": "cursor-hand",
+    "frames": [
+      "frames/Hand/Hand-01.png",
+      "frames/Hand/Hand-02.png"
+    ],
+    "hotspots": [
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ],
+    "duration_ms": 200,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "Handwriting",
+    "class": "cursor-handwriting",
+    "frames": [
+      "frames/Handwriting/Handwriting-01.png"
+    ],
+    "hotspots": [
+      [
+        0,
+        0
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "Help",
+    "class": "cursor-help",
+    "frames": [
+      "frames/Help/Help-01.png",
+      "frames/Help/Help-02.png"
+    ],
+    "hotspots": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "duration_ms": 467,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "IBeam",
+    "class": "cursor-ibeam",
+    "frames": [
+      "frames/IBeam/IBeam-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "NO",
+    "class": "cursor-no",
+    "frames": [
+      "frames/NO/NO-01.png",
+      "frames/NO/NO-02.png",
+      "frames/NO/NO-03.png"
+    ],
+    "hotspots": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "duration_ms": 333,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "SizeAll",
+    "class": "cursor-size-all",
+    "frames": [
+      "frames/SizeAll/SizeAll-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "SizeNESW",
+    "class": "cursor-size-nesw",
+    "frames": [
+      "frames/SizeNESW/SizeNESW-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "SizeNS",
+    "class": "cursor-size-ns",
+    "frames": [
+      "frames/SizeNS/SizeNS-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "SizeNWSE",
+    "class": "cursor-size-nwse",
+    "frames": [
+      "frames/SizeNWSE/SizeNWSE-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "SizeWE",
+    "class": "cursor-size-we",
+    "frames": [
+      "frames/SizeWE/SizeWE-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "UpArrow",
+    "class": "cursor-up-arrow",
+    "frames": [
+      "frames/UpArrow/UpArrow-01.png"
+    ],
+    "hotspots": [
+      [
+        5,
+        0
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "Wait",
+    "class": "cursor-wait",
+    "frames": [
+      "frames/Wait/Wait-01.png",
+      "frames/Wait/Wait-02.png",
+      "frames/Wait/Wait-03.png",
+      "frames/Wait/Wait-04.png",
+      "frames/Wait/Wait-05.png",
+      "frames/Wait/Wait-06.png",
+      "frames/Wait/Wait-07.png",
+      "frames/Wait/Wait-08.png",
+      "frames/Wait/Wait-09.png",
+      "frames/Wait/Wait-10.png",
+      "frames/Wait/Wait-11.png",
+      "frames/Wait/Wait-12.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 1000,
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "name": "cross",
+    "class": "cursor-crosshair",
+    "frames": [
+      "frames/cross/cross-01.png"
+    ],
+    "hotspots": [
+      [
+        15,
+        15
+      ]
+    ],
+    "duration_ms": 300,
+    "size": [
+      32,
+      32
+    ]
+  }
+]

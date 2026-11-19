@@ -1,0 +1,28 @@
+/* Manentia / Alerts and color codes — sprite-based icon classes */
+[class^="manentia_alerts_and_color_codes_"], [class*=" manentia_alerts_and_color_codes_"] {padding: 0; margin: 0; border: 0; box-sizing: content-box; background-size: auto;image-rendering: pixelated;display:inline-block;vertical-align:middle;background-image:url("alerts-and-color-codes-sprite.png");background-repeat:no-repeat;flex-shrink:0}
+.manentia_alerts_and_color_codes_alert_high{width:16px;height:16px;background-position:-0px -0px}
+.manentia_alerts_and_color_codes_alert_low{width:16px;height:16px;background-position:-16px -0px}
+.manentia_alerts_and_color_codes_alert_medium{width:16px;height:16px;background-position:-32px -0px}
+.manentia_alerts_and_color_codes_approved{width:16px;height:16px;background-position:-48px -0px}
+.manentia_alerts_and_color_codes_confirmation{width:16px;height:16px;background-position:-64px -0px}
+.manentia_alerts_and_color_codes_cpi_alert_high{width:16px;height:16px;background-position:-80px -0px}
+.manentia_alerts_and_color_codes_cpi_alert_low{width:16px;height:16px;background-position:-0px -16px}
+.manentia_alerts_and_color_codes_cpi_alert_medium{width:16px;height:16px;background-position:-16px -16px}
+.manentia_alerts_and_color_codes_cpi_no_data{width:16px;height:16px;background-position:-32px -16px}
+.manentia_alerts_and_color_codes_error{width:16px;height:16px;background-position:-48px -16px}
+.manentia_alerts_and_color_codes_finish{width:14px;height:12px;background-position:-64px -16px}
+.manentia_alerts_and_color_codes_important{width:5px;height:13px;background-position:-80px -16px}
+.manentia_alerts_and_color_codes_info{width:16px;height:16px;background-position:-0px -32px}
+.manentia_alerts_and_color_codes_notice{width:16px;height:15px;background-position:-16px -32px}
+.manentia_alerts_and_color_codes_qi_alert_high{width:16px;height:16px;background-position:-32px -32px}
+.manentia_alerts_and_color_codes_qi_alert_low{width:16px;height:16px;background-position:-48px -32px}
+.manentia_alerts_and_color_codes_qi_alert_medium{width:16px;height:16px;background-position:-64px -32px}
+.manentia_alerts_and_color_codes_qi_no_data{width:16px;height:16px;background-position:-80px -32px}
+.manentia_alerts_and_color_codes_small_alert_high{width:7px;height:7px;background-position:-0px -48px}
+.manentia_alerts_and_color_codes_small_alert_low{width:7px;height:7px;background-position:-16px -48px}
+.manentia_alerts_and_color_codes_small_alert_medium{width:7px;height:7px;background-position:-32px -48px}
+.manentia_alerts_and_color_codes_small_alert_nodata{width:7px;height:7px;background-position:-48px -48px}
+.manentia_alerts_and_color_codes_spi_alert_high{width:16px;height:16px;background-position:-64px -48px}
+.manentia_alerts_and_color_codes_spi_alert_low{width:16px;height:16px;background-position:-80px -48px}
+.manentia_alerts_and_color_codes_spi_alert_medium{width:16px;height:16px;background-position:-0px -64px}
+.manentia_alerts_and_color_codes_spi_no_data{width:16px;height:16px;background-position:-16px -64px}

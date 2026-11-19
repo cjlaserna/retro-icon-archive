@@ -1,0 +1,9 @@
+/* Manentia / Buttons — sprite-based icon classes */
+[class^="manentia_buttons_"], [class*=" manentia_buttons_"] {padding: 0; margin: 0; border: 0; box-sizing: content-box; background-size: auto;image-rendering: pixelated;display:inline-block;vertical-align:middle;background-image:url("buttons-sprite.png");background-repeat:no-repeat;flex-shrink:0}
+.manentia_buttons_button_disabled{width:16px;height:16px;background-position:-0px -0px}
+.manentia_buttons_button_down{width:16px;height:16px;background-position:-16px -0px}
+.manentia_buttons_button_help{width:14px;height:14px;background-position:-32px -0px}
+.manentia_buttons_button_last{width:15px;height:16px;background-position:-0px -16px}
+.manentia_buttons_button_next{width:16px;height:16px;background-position:-16px -16px}
+.manentia_buttons_button_previous{width:16px;height:16px;background-position:-32px -16px}
+.manentia_buttons_button_up{width:16px;height:16px;background-position:-0px -32px}

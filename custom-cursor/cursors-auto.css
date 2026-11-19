@@ -1,0 +1,201 @@
+﻿/* Automatic cursor mapping from the uploaded Windows .ani scheme. */
+/* Cursor frames live in ./frames/ relative to this file. */
+
+/* Cursor PNG alpha is baked from this value; native cursors cannot use CSS opacity. */
+:root {
+  --opacity: 0.85;
+}
+
+:root,
+body {
+  cursor: url("./frames/Arrow/Arrow-01.png") 3 3, auto;
+}
+
+/* Let ordinary descendants inherit the custom arrow instead of native cursors. */
+:where(*, *::before, *::after) {
+  cursor: inherit;
+}
+
+/* Links, buttons, dropdowns and other clickable elements use the animated hand. */
+:where(
+  a,
+  button,
+  [role="button"],
+  select,
+  option,
+  summary,
+  [data-tooltip],
+  .hiddentooltip,
+  label[for],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="file"],
+  input[type="range"]
+) {
+  animation: cursor-hand-frames 200ms step-end infinite;
+}
+
+/* Text entry uses the original I-beam cursor and hotspot. */
+:where(
+  textarea,
+  [contenteditable="true"],
+  [contenteditable=""],
+  input:not([type]),
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"]
+) {
+  cursor: url("./frames/IBeam/IBeam-01.png") 15 15, text;
+}
+
+@keyframes cursor-appstarting-frames {
+  0.00% { cursor: url("./frames/AppStarting/AppStarting-01.png") 3 2, auto; }
+  20.00% { cursor: url("./frames/AppStarting/AppStarting-02.png") 3 2, auto; }
+  40.00% { cursor: url("./frames/AppStarting/AppStarting-03.png") 3 2, auto; }
+  60.00% { cursor: url("./frames/AppStarting/AppStarting-04.png") 3 2, auto; }
+  80.00% { cursor: url("./frames/AppStarting/AppStarting-05.png") 3 2, auto; }
+  100.00% { cursor: url("./frames/AppStarting/AppStarting-05.png") 3 2, auto; }
+}
+
+/* app starting */
+.cursor-appstarting {
+  animation: cursor-appstarting-frames 417ms step-end infinite;
+}
+
+/* default arrow */
+.cursor-arrow {
+  cursor: url("./frames/Arrow/Arrow-01.png") 3 3, auto;
+}
+
+@keyframes cursor-hand-frames {
+  0.00% { cursor: url("./frames/Hand/Hand-01.png") 7 0, auto; }
+  50.00% { cursor: url("./frames/Hand/Hand-02.png") 7 0, auto; }
+  100.00% { cursor: url("./frames/Hand/Hand-02.png") 7 0, auto; }
+}
+
+/* link hand */
+.cursor-hand {
+  animation: cursor-hand-frames 200ms step-end infinite;
+}
+
+/* handwriting */
+.cursor-handwriting {
+  cursor: url("./frames/Handwriting/Handwriting-01.png") 0 0, auto;
+}
+
+@keyframes cursor-help-frames {
+  0.00% { cursor: url("./frames/Help/Help-01.png") 3 3, auto; }
+  64.29% { cursor: url("./frames/Help/Help-02.png") 3 3, auto; }
+  100.00% { cursor: url("./frames/Help/Help-02.png") 3 3, auto; }
+}
+
+/* help */
+.cursor-help {
+  animation: cursor-help-frames 467ms step-end infinite;
+}
+
+/* text */
+.cursor-ibeam {
+  cursor: url("./frames/IBeam/IBeam-01.png") 15 15, auto;
+}
+
+@keyframes cursor-no-frames {
+  0.00% { cursor: url("./frames/NO/NO-01.png") 3 3, auto; }
+  25.00% { cursor: url("./frames/NO/NO-02.png") 3 3, auto; }
+  50.00% { cursor: url("./frames/NO/NO-03.png") 3 3, auto; }
+  100.00% { cursor: url("./frames/NO/NO-03.png") 3 3, auto; }
+}
+
+/* unavailable */
+.cursor-no {
+  animation: cursor-no-frames 333ms step-end infinite;
+}
+
+/* move */
+.cursor-size-all {
+  cursor: url("./frames/SizeAll/SizeAll-01.png") 15 15, auto;
+}
+
+/* northeast-southwest resize */
+.cursor-size-nesw {
+  cursor: url("./frames/SizeNESW/SizeNESW-01.png") 15 15, auto;
+}
+
+/* north-south resize */
+.cursor-size-ns {
+  cursor: url("./frames/SizeNS/SizeNS-01.png") 15 15, auto;
+}
+
+/* northwest-southeast resize */
+.cursor-size-nwse {
+  cursor: url("./frames/SizeNWSE/SizeNWSE-01.png") 15 15, auto;
+}
+
+/* west-east resize */
+.cursor-size-we {
+  cursor: url("./frames/SizeWE/SizeWE-01.png") 15 15, auto;
+}
+
+/* alternate select */
+.cursor-up-arrow {
+  cursor: url("./frames/UpArrow/UpArrow-01.png") 5 0, auto;
+}
+
+@keyframes cursor-wait-frames {
+  0.00% { cursor: url("./frames/Wait/Wait-01.png") 15 15, auto; }
+  8.33% { cursor: url("./frames/Wait/Wait-02.png") 15 15, auto; }
+  16.67% { cursor: url("./frames/Wait/Wait-03.png") 15 15, auto; }
+  25.00% { cursor: url("./frames/Wait/Wait-04.png") 15 15, auto; }
+  33.33% { cursor: url("./frames/Wait/Wait-05.png") 15 15, auto; }
+  41.67% { cursor: url("./frames/Wait/Wait-06.png") 15 15, auto; }
+  50.00% { cursor: url("./frames/Wait/Wait-07.png") 15 15, auto; }
+  58.33% { cursor: url("./frames/Wait/Wait-08.png") 15 15, auto; }
+  66.67% { cursor: url("./frames/Wait/Wait-09.png") 15 15, auto; }
+  75.00% { cursor: url("./frames/Wait/Wait-10.png") 15 15, auto; }
+  83.33% { cursor: url("./frames/Wait/Wait-11.png") 15 15, auto; }
+  91.67% { cursor: url("./frames/Wait/Wait-12.png") 15 15, auto; }
+  100.00% { cursor: url("./frames/Wait/Wait-12.png") 15 15, auto; }
+}
+
+/* wait */
+.cursor-wait {
+  animation: cursor-wait-frames 1000ms step-end infinite;
+}
+
+/* crosshair */
+.cursor-crosshair {
+  cursor: url("./frames/cross/cross-01.png") 15 15, auto;
+}
+
+/* Optional one-class overrides: cursor-help, cursor-wait, cursor-no,
+   cursor-size-ns, cursor-size-we, cursor-size-all, etc. */
+
+/* Disable the clickable hand on disabled controls. */
+:where(button:disabled, input:disabled, select:disabled, [aria-disabled="true"]) {
+  animation: none;
+  cursor: url("./frames/NO/NO-01.png") 3 3, not-allowed;
+}
+
+/* Prefer nonanimated cursors for visitors requesting reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  :where(a, button, [role="button"], select, option, summary,
+    [data-tooltip], .hiddentooltip, label[for],
+    input[type="button"], input[type="submit"], input[type="reset"],
+    input[type="checkbox"], input[type="radio"], input[type="file"],
+    input[type="range"]) {
+    animation: none;
+    cursor: url("./frames/Hand/Hand-01.png") 7 0, pointer;
+  }
+}

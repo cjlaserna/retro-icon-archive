@@ -1,0 +1,21 @@
+/* Manentia / Text editor — sprite-based icon classes */
+[class^="manentia_text_editor_"], [class*=" manentia_text_editor_"] {padding: 0; margin: 0; border: 0; box-sizing: content-box; background-size: auto;image-rendering: pixelated;display:inline-block;vertical-align:middle;background-image:url("text-editor-sprite.png");background-repeat:no-repeat;flex-shrink:0}
+.manentia_text_editor_editoraligncenter{width:14px;height:11px;background-position:-0px -0px}
+.manentia_text_editor_editoralignleft{width:14px;height:11px;background-position:-20px -0px}
+.manentia_text_editor_editoralignright{width:14px;height:11px;background-position:-40px -0px}
+.manentia_text_editor_editorblank{width:14px;height:18px;background-position:-60px -0px}
+.manentia_text_editor_editorbold{width:8px;height:9px;background-position:-80px -0px}
+.manentia_text_editor_editorbullets{width:13px;height:12px;background-position:-0px -20px}
+.manentia_text_editor_editorcopy{width:14px;height:18px;background-position:-20px -20px}
+.manentia_text_editor_editorcut{width:9px;height:14px;background-position:-40px -20px}
+.manentia_text_editor_editordecreaseindent{width:19px;height:18px;background-position:-60px -20px}
+.manentia_text_editor_editorimage{width:14px;height:18px;background-position:-80px -20px}
+.manentia_text_editor_editorincreaseindent{width:19px;height:18px;background-position:-0px -40px}
+.manentia_text_editor_editoritalic{width:13px;height:9px;background-position:-20px -40px}
+.manentia_text_editor_editorline{width:14px;height:3px;background-position:-40px -40px}
+.manentia_text_editor_editorlinkdocument{width:17px;height:18px;background-position:-60px -40px}
+.manentia_text_editor_editorlinkhtml{width:17px;height:18px;background-position:-80px -40px}
+.manentia_text_editor_editornumbers{width:14px;height:14px;background-position:-0px -60px}
+.manentia_text_editor_editorpaste{width:20px;height:17px;background-position:-20px -60px}
+.manentia_text_editor_editortable{width:15px;height:17px;background-position:-40px -60px}
+.manentia_text_editor_editorunderline{width:9px;height:11px;background-position:-60px -60px}

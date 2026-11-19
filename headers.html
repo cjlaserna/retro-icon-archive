@@ -1,0 +1,301 @@
+<link rel="stylesheet" href="custom-cursor/cursors-auto.css" />
+<style>
+  .library-sprite-canvas {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    image-rendering: pixelated;
+  }
+
+  .library-canvas-item {
+    max-width: 990px;
+    margin-bottom: 20px;
+  }
+
+  .library-canvas-item canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(20, 65, 120, 0.15);
+  }
+
+  .library-canvas-item button {
+    display: block;
+    margin: 8px 0 0 auto;
+    padding: 7px 15px;
+    font: inherit;
+    color: #145580;
+    cursor: pointer;
+
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      #e5f6ff 48%,
+      #c5e8fa 49%,
+      #e0f3ff 100%
+    );
+
+    border: 1px solid #78aeca;
+    border-radius: 5px;
+
+    box-shadow:
+      inset 0 1px 0 #fff,
+      0 2px 3px rgba(30, 90, 140, 0.15);
+  }
+
+  .library-canvas-item button:hover {
+    filter: brightness(1.05);
+  }
+</style>
+
+<div id="library-canvases"></div>
+
+<script>
+  const libraries = [
+    {
+      name: "FamFamFam",
+      folder: "famfamfam",
+      icons: "silk-sprite.png",
+      preview: "silk-sprite.png",
+    },
+    {
+      name: "Sweetie",
+      folder: "sweetie",
+      icons: "basepack-sprite.png",
+      preview: "basepack-sprite.png",
+    },
+    {
+      name: "Manentia",
+      folder: "manentia",
+      icons: "misc-metaphors-and-objects-sprite.png",
+      preview: "documents-and-folders-sprite.png",
+    },
+    {
+      name: "Drunkey Love",
+      folder: "drunkey-love",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+    {
+      name: "Diagona",
+      folder: "diagona",
+      icons: "16-sprite.png",
+      preview: "16-sprite.png",
+    },
+    {
+      name: "Fugue",
+      folder: "fugue",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+    {
+      name: "FatCow 16",
+      folder: "fatcow-16",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+    {
+      name: "FatCow 16 Grey",
+      folder: "fatcow-16-grey",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+    {
+      name: "FatCow 32",
+      folder: "fatcow-32",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+    {
+      name: "FatCow 32 Grey",
+      folder: "fatcow-32-grey",
+      icons: "icons-sprite.png",
+      preview: "icons-sprite.png",
+    },
+  ];
+
+  const WIDTH = 990;
+  const HEIGHT = 190;
+
+  const imageCache = new Map();
+
+  function loadImage(src) {
+    if (!imageCache.has(src)) {
+      imageCache.set(
+        src,
+        new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => resolve(img);
+          img.onerror = () => reject(new Error(`Could not load ${src}`));
+          img.src = src;
+        }),
+      );
+    }
+
+    return imageCache.get(src);
+  }
+
+  function drawCover(ctx, img, x, y, w, h) {
+    const scale = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+
+    const sw = w / scale;
+    const sh = h / scale;
+    const sx = (img.naturalWidth - sw) / 2;
+    const sy = (img.naturalHeight - sh) / 2;
+
+    ctx.drawImage(img, sx, sy, sw, sh, x, y, w, h);
+  }
+
+  function drawSpriteCrop(ctx, img, x, y, w, h) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(x, y, w, h);
+    ctx.clip();
+
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(img, x, y);
+
+    ctx.restore();
+  }
+
+  async function drawHeader(canvas, library) {
+    const ctx = canvas.getContext("2d");
+    const base = `/${library.folder}/`;
+
+    const [background, icons, preview] = await Promise.all([
+      loadImage("/assets/vista-blue.jpg"),
+      loadImage(base + library.icons),
+      loadImage(base + library.preview),
+    ]);
+
+    ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.roundRect(0, 0, WIDTH, HEIGHT, 5);
+    ctx.clip();
+
+    drawCover(ctx, background, 0, 0, WIDTH, HEIGHT);
+
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#5d9ed4";
+    ctx.strokeRect(1, 1, WIDTH - 2, HEIGHT - 2);
+
+    drawSpriteCrop(ctx, icons, 25, 42, 115, 105);
+
+    const panelX = 620;
+    const panelY = 32;
+    const panelW = 345;
+    const panelH = 125;
+
+    ctx.save();
+    ctx.shadowColor = "rgba(0, 30, 90, 0.25)";
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetY = 3;
+
+    ctx.beginPath();
+    ctx.roundRect(panelX, panelY, panelW, panelH, 2);
+
+    const gradient = ctx.createLinearGradient(0, panelY, 0, panelY + panelH);
+
+    gradient.addColorStop(0, "#ffffff");
+    gradient.addColorStop(0.5, "#f4fbff");
+    gradient.addColorStop(1, "#e4f3fc");
+
+    ctx.fillStyle = gradient;
+    ctx.fill();
+
+    ctx.restore();
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.roundRect(panelX, panelY, panelW, panelH, 2);
+    ctx.clip();
+
+    drawSpriteCrop(
+      ctx,
+      preview,
+      panelX + 12,
+      panelY + 12,
+      panelW - 24,
+      panelH - 24,
+    );
+
+    ctx.restore();
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.roundRect(panelX, panelY, panelW, panelH, 2);
+    ctx.strokeStyle = "rgba(255,255,255,0.9)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    ctx.restore();
+
+    ctx.save();
+
+    let fontSize = 48;
+    ctx.font = `700 ${fontSize}px "Segoe UI", sans-serif`;
+
+    while (ctx.measureText(library.name).width > 430 && fontSize > 22) {
+      fontSize--;
+      ctx.font = `700 ${fontSize}px "Segoe UI", sans-serif`;
+    }
+
+    ctx.fillStyle = "#ffffff";
+    ctx.textBaseline = "middle";
+    ctx.shadowColor = "rgba(0,35,90,0.65)";
+    ctx.shadowBlur = 6;
+    ctx.shadowOffsetY = 3;
+
+    ctx.fillText(library.name, 165, HEIGHT / 2);
+
+    ctx.restore();
+    ctx.restore();
+  }
+
+  async function createHeaders() {
+    const container = document.getElementById("library-canvases");
+
+    for (const library of libraries) {
+      const item = document.createElement("div");
+      item.className = "library-canvas-item";
+
+      const header = document.createElement("canvas");
+      header.width = 990;
+      header.height = 190;
+
+      const sprite = document.createElement("canvas");
+      sprite.width = 130;
+      sprite.height = 130;
+      sprite.className = "library-sprite-canvas";
+
+      item.append(header, sprite);
+      container.append(item);
+
+      try {
+        await drawHeader(header, library);
+        headerButton.disabled = false;
+      } catch (error) {
+        console.error(error);
+      }
+
+      try {
+        const image = await loadImage(`/${library.folder}/${library.preview}`);
+
+        const ctx = sprite.getContext("2d");
+        ctx.imageSmoothingEnabled = false;
+        ctx.clearRect(0, 0, 130, 130);
+        ctx.drawImage(image, 0, 0);
+
+        spriteButton.disabled = false;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }
+
+  createHeaders();
+</script>
+

@@ -1,0 +1,17 @@
+/* Manentia / Users and groups — sprite-based icon classes */
+[class^="manentia_users_and_groups_"], [class*=" manentia_users_and_groups_"] {padding: 0; margin: 0; border: 0; box-sizing: content-box; background-size: auto;image-rendering: pixelated;display:inline-block;vertical-align:middle;background-image:url("users-and-groups-sprite.png");background-repeat:no-repeat;flex-shrink:0}
+.manentia_users_and_groups_administrator{width:16px;height:17px;background-position:-0px -0px}
+.manentia_users_and_groups_ceo{width:16px;height:17px;background-position:-20px -0px}
+.manentia_users_and_groups_group{width:17px;height:16px;background-position:-40px -0px}
+.manentia_users_and_groups_group_blocked{width:17px;height:16px;background-position:-60px -0px}
+.manentia_users_and_groups_group_create{width:18px;height:18px;background-position:-0px -20px}
+.manentia_users_and_groups_role{width:16px;height:19px;background-position:-20px -20px}
+.manentia_users_and_groups_role_create{width:19px;height:20px;background-position:-40px -20px}
+.manentia_users_and_groups_user_1{width:16px;height:17px;background-position:-60px -20px}
+.manentia_users_and_groups_user_1_block{width:16px;height:17px;background-position:-0px -40px}
+.manentia_users_and_groups_user_1_create{width:18px;height:18px;background-position:-20px -40px}
+.manentia_users_and_groups_user_1_erased{width:16px;height:17px;background-position:-40px -40px}
+.manentia_users_and_groups_user_2{width:16px;height:17px;background-position:-60px -40px}
+.manentia_users_and_groups_user_3{width:16px;height:17px;background-position:-0px -60px}
+.manentia_users_and_groups_user_3_blocked{width:16px;height:17px;background-position:-20px -60px}
+.manentia_users_and_groups_user_3_create{width:18px;height:18px;background-position:-40px -60px}
