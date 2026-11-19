@@ -1,0 +1,50 @@
+name: Publish Retro Icons to npm
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+
+      - name: Ensure compatible npm
+        run: npm install -g npm@^11
+
+      - name: Verify version tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Expected a tag like v0.1.1"
+            exit 1
+          fi
+
+      - name: Build npm package
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          node scripts/build-npm.mjs "$VERSION"
+
+      - name: Preview package
+        working-directory: .npm-build/retro-icons-archive
+        run: npm pack --dry-run
+
+      - name: Publish to npm
+        working-directory: .npm-build/retro-icons-archive
+        run: npm publish --access public
+
