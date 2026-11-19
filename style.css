@@ -118,7 +118,7 @@ body {
   margin: 0;
   font: 13px var(--font-body);
   color: var(--black);
-  background: var(--white) url(/assets/bubbles.gif);
+  background: var(--white) url("assets/bubbles.gif");
 }
 .wrap,
 .bar {

@@ -162,10 +162,10 @@
 
   async function drawHeader(canvas, library) {
     const ctx = canvas.getContext("2d");
-    const base = `/${library.folder}/`;
+    const base = `${library.folder}/`;
 
     const [background, icons, preview] = await Promise.all([
-      loadImage("/assets/vista-blue.jpg"),
+      loadImage("assets/vista-blue.jpg"),
       loadImage(base + library.icons),
       loadImage(base + library.preview),
     ]);
@@ -282,7 +282,7 @@
       }
 
       try {
-        const image = await loadImage(`/${library.folder}/${library.preview}`);
+        const image = await loadImage(`${library.folder}/${library.preview}`);
 
         const ctx = sprite.getContext("2d");
         ctx.imageSmoothingEnabled = false;
